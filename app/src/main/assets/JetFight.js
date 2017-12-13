@@ -214,7 +214,7 @@ break;
 
 
 case 2:  // If the Player is playing the game
-MainMusic();
+MainMusic.play();
 styleText("Black", "30px Courier New", "left","middle");  // Sets the values for the text
 canvasContext.fillText("Score: "+PlayerScore, 20, 20);       // Displays the Players Score on screen
 canvasContext.fillText("Player Lives:" +PlayerLives,300,20);      // Displays the Players lives on Screen
@@ -236,7 +236,6 @@ break;
 case 3:   // If the player is at the Game Over screen
 
 
-GameOverSound.Play();
 sGameOverTitle = new aSprite (canvas.width/2 -300,canvas.height/2 -180, "GameOver.png",0,0); // Loads and sets the Game over Title Image
 sGameOverTitle.renderF(120,380);   //  This renders the game over image
 
